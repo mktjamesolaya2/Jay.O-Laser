@@ -1,5 +1,4 @@
 import { Crown, Sparkles, Layers, ShieldCheck, TrendingUp } from "lucide-react";
-import machineImg from "@/assets/jayo-machine.png";
 import { CTAButton } from "./CTAButton";
 
 const items = [

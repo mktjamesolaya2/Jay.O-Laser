@@ -32,6 +32,7 @@ function Index() {
   return (
     <main className="bg-background text-foreground">
       <Hero />
+      <Description />
       <Marquee />
       <Benefits />
       <Bonus />

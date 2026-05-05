@@ -1,5 +1,4 @@
 import { Crown, Sparkles, Layers, ShieldCheck, TrendingUp } from "lucide-react";
-import machineImg from "@/assets/jayo-machine.png";
 import { CTAButton } from "./CTAButton";
 
 const items = [
@@ -26,38 +25,9 @@ export function Benefits() {
           </p>
         </div>
 
-        <div className="mt-16 grid md:grid-cols-12 gap-6">
-          <article className="md:col-span-7 relative rounded-2xl overflow-hidden border border-border bg-gradient-marble shadow-elegant p-10 flex flex-col justify-between min-h-[420px]">
-            <div>
-              <Crown className="h-8 w-8 text-gold" strokeWidth={1.4} />
-              <h3 className="mt-6 font-serif text-3xl md:text-4xl leading-tight">
-                Um artefato de excelência <em className="not-italic text-gradient-gold">na sua bancada</em>
-              </h3>
-              <p className="mt-5 text-muted-foreground max-w-md">
-                Design escultural, presença monumental e desempenho clínico de ponta. O Jayo Laser
-                eleva a experiência do seu cliente desde o primeiro olhar.
-              </p>
-            </div>
-            <img
-              src={machineImg}
-              alt=""
-              aria-hidden
-              className="absolute -right-12 -bottom-10 w-[55%] opacity-90 pointer-events-none select-none"
-            />
-          </article>
-
-          <div className="md:col-span-5 grid gap-6">
-            {items.slice(0, 2).map(({ icon: Icon, title, desc }) => (
-              <article key={title} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-                <Icon className="h-6 w-6 text-gold" strokeWidth={1.4} />
-                <h3 className="mt-4 font-semibold text-foreground">{title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{desc}</p>
-              </article>
-            ))}
-          </div>
-
-          {items.slice(2).map(({ icon: Icon, title, desc }) => (
-            <article key={title} className="md:col-span-4 rounded-2xl border border-border bg-card p-6 shadow-soft">
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {items.map(({ icon: Icon, title, desc }) => (
+            <article key={title} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
               <Icon className="h-6 w-6 text-gold" strokeWidth={1.4} />
               <h3 className="mt-4 font-semibold text-foreground">{title}</h3>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{desc}</p>

@@ -49,7 +49,7 @@ export function Hero() {
         <img
           src={heroMobile}
           alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-[35%_center]"
           fetchPriority="high"
         />
 

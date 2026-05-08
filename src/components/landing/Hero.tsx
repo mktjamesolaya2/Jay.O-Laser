@@ -1,4 +1,5 @@
 import heroImg from "@/assets/Design sem nome (1).png";
+import heroMobile from "@/assets/Hero_mobile.png";
 import logoJayo from "@/assets/logo-jayo.png";
 import { CTAButton } from "./CTAButton";
 
@@ -43,40 +44,39 @@ export function Hero() {
         </div>
       </div>
 
-      {/* MOBILE: full-screen hero — text content top, full hero image anchored at bottom */}
-      <div className="md:hidden flex flex-col min-h-screen">
-        <div className="flex-1 flex flex-col justify-center items-center text-center px-6 pt-8 pb-4">
+      {/* MOBILE: vertical hero image as full-screen background, text overlaid on sky portion */}
+      <div className="md:hidden relative w-full">
+        <img
+          src={heroMobile}
+          alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
+          className="block w-full h-auto"
+          fetchPriority="high"
+        />
+
+        <div className="absolute inset-x-0 top-[7%] z-10 flex flex-col items-center px-6 text-center">
           <img
             src={logoJayo}
             alt="Jay.O Laser"
-            className="block mx-auto w-[65%] max-w-[240px] h-auto"
-            fetchPriority="high"
+            className="block w-[60%] max-w-[220px] h-auto"
           />
 
-          <p className="mt-5 font-['Cormorant_Garamond'] text-2xl font-medium leading-tight text-[#3a2516]">
+          <p className="mt-3 font-['Cormorant_Garamond'] text-xl font-semibold leading-tight text-[#3a2516]">
             A tecnologia da remoção
             <br />
             de pigmentos em suas mãos
           </p>
 
-          <p className="mt-3 font-['Lora'] text-xs text-[#5a4030] leading-relaxed max-w-xs mx-auto">
+          <p className="mt-2 font-['Lora'] text-[11px] text-[#3a2516] leading-snug max-w-[280px]">
             Agora ficou mais fácil adquirir seu equipamento a laser com a alta
             qualidade Jay.O de produtos para Micropigmentação.
           </p>
 
-          <div className="mt-6 w-full max-w-sm mx-auto">
-            <CTAButton className="w-full justify-center py-3.5 text-sm tracking-[0.14em]">
+          <div className="mt-4 w-full max-w-[280px]">
+            <CTAButton className="w-full justify-center py-3 text-[12px] tracking-[0.14em]">
               Quero meu laser Jay.O
             </CTAButton>
           </div>
         </div>
-
-        <img
-          src={heroImg}
-          alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
-          className="block w-full h-auto"
-          loading="lazy"
-        />
       </div>
     </section>
   );

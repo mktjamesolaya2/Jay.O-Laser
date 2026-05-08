@@ -29,7 +29,7 @@ export function Benefits() {
       <img
         src={fundoVantagens}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover object-top"
+        className="absolute inset-0 w-full h-full object-cover object-[85%_top] md:object-top"
         loading="lazy"
       />
 

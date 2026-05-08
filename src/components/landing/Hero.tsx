@@ -60,18 +60,13 @@ export function Hero() {
             className="block w-[60%] max-w-[220px] h-auto"
           />
 
-          <p className="mt-3 font-['Cormorant_Garamond'] text-xl font-semibold leading-tight text-[#3a2516]">
+          <p className="mt-4 font-['Cormorant_Garamond'] text-2xl font-normal leading-tight text-[#3a2516]">
             A tecnologia da remoção
             <br />
             de pigmentos em suas mãos
           </p>
 
-          <p className="mt-2 font-['Lora'] text-[11px] text-[#3a2516] leading-snug max-w-[280px]">
-            Agora ficou mais fácil adquirir seu equipamento a laser com a alta
-            qualidade Jay.O de produtos para Micropigmentação.
-          </p>
-
-          <div className="mt-4 w-full max-w-[280px]">
+          <div className="mt-10 w-full max-w-[280px]">
             <CTAButton className="w-full justify-center py-3 text-[12px] tracking-[0.14em]">
               Quero meu laser Jay.O
             </CTAButton>

@@ -1,5 +1,5 @@
 import heroImg from "@/assets/Design sem nome (1).png";
-import heroMobile from "@/assets/Hero_mobile.png";
+import heroMobile from "@/assets/Hero_mobile2.png";
 import logoJayo from "@/assets/logo-jayo.png";
 import { CTAButton } from "./CTAButton";
 
@@ -44,16 +44,16 @@ export function Hero() {
         </div>
       </div>
 
-      {/* MOBILE: full-screen hero — image at natural aspect (no crop), text overlaid */}
+      {/* MOBILE: full-screen vertical hero, text overlaid on sky portion */}
       <div className="md:hidden relative w-full min-h-screen">
         <img
           src={heroMobile}
           alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
-          className="block w-full h-auto"
+          className="absolute inset-0 w-full h-full object-cover object-center"
           fetchPriority="high"
         />
 
-        <div className="absolute inset-x-0 top-[7%] z-10 flex flex-col items-center px-6 text-center">
+        <div className="relative z-10 flex flex-col items-center px-6 pt-[7vh] text-center">
           <img
             src={logoJayo}
             alt="Jay.O Laser"

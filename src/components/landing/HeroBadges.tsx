@@ -10,7 +10,7 @@ const badges = [
 export function HeroBadges() {
   return (
     <section className="relative z-10 flow-root pb-0">
-      <div className="container mx-auto -mt-6 md:-mt-[110px] max-w-6xl px-3 md:px-6">
+      <div className="container mx-auto -mt-16 md:-mt-[110px] max-w-6xl px-3 md:px-6">
         <div className="grid grid-cols-4 gap-2 md:gap-6">
           {badges.map(([line1, line2]) => (
             <div

@@ -122,17 +122,17 @@ export function Earnings() {
       <span className="pointer-events-none absolute top-[68%] right-[14%] w-[2px] h-[2px] rounded-full bg-[#DCC9A8]/50" />
       <span className="pointer-events-none absolute top-[88%] right-[7%] w-1 h-1 rounded-full bg-[#B89656]/45 blur-[0.5px]" />
 
-      {/* Zeus — mobile: visible top-left figure; desktop: side fade */}
+      {/* Zeus — mobile: visible figure overlapping the left edge of the calculator card */}
       <img
         src={zeus}
         alt=""
-        className="md:hidden pointer-events-none absolute top-16 -left-6 h-56 sm:h-64 w-auto z-[4] opacity-60"
+        className="md:hidden pointer-events-none absolute top-32 -left-3 h-72 sm:h-80 w-auto z-[7] opacity-70"
         style={{
           mixBlendMode: "lighten",
           maskImage:
-            "linear-gradient(to right, black 0%, black 55%, transparent 100%)",
+            "linear-gradient(to right, black 0%, black 60%, rgba(0,0,0,0.4) 80%, transparent 100%)",
           WebkitMaskImage:
-            "linear-gradient(to right, black 0%, black 55%, transparent 100%)",
+            "linear-gradient(to right, black 0%, black 60%, rgba(0,0,0,0.4) 80%, transparent 100%)",
         }}
         loading="lazy"
       />

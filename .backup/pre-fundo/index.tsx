@@ -4,13 +4,10 @@ import { HeroBadges } from "@/components/landing/HeroBadges";
 import { Description } from "@/components/landing/Description";
 import { Marquee } from "@/components/landing/Marquee";
 import { Benefits } from "@/components/landing/Benefits";
-import { Results } from "@/components/landing/Results";
-import { Earnings } from "@/components/landing/Earnings";
-import { Closing } from "@/components/landing/Closing";
-import { ContactCTA } from "@/components/landing/ContactCTA";
 import { Bonus } from "@/components/landing/Bonus";
-import { BonusDetails } from "@/components/landing/BonusDetails";
-import { CinematicDivider } from "@/components/landing/CinematicDivider";
+import { Trust } from "@/components/landing/Trust";
+import { FAQ } from "@/components/landing/FAQ";
+import { FinalCTA } from "@/components/landing/FinalCTA";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,16 +36,13 @@ function Index() {
       <HeroBadges />
       <Description />
       <Marquee />
-      <Bonus />
-      <BonusDetails />
-      <CinematicDivider />
       <Benefits />
-      <Results />
-      <Earnings />
-      <Closing />
-      <ContactCTA />
-      <footer className="py-5 text-center text-sm font-['Lora'] text-[#dcc9a8] bg-[#3a2516]">
-        © 2024 – Todos direitos reservados Jay.O
+      <Bonus />
+      <Trust />
+      <FAQ />
+      <FinalCTA />
+      <footer className="py-10 text-center text-xs tracking-widest uppercase text-muted-foreground border-t border-border">
+        © {new Date().getFullYear()} Jayo Laser — Todos os direitos reservados
       </footer>
     </main>
   );

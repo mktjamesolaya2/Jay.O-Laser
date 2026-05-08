@@ -75,7 +75,7 @@ export function Marquee() {
   };
 
   return (
-    <section className="py-8 md:py-12 overflow-hidden">
+    <section className="py-8 md:py-12 bg-gradient-marble overflow-hidden">
       <div className="marquee-container relative">
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 bg-gradient-to-l from-background to-transparent z-10" />

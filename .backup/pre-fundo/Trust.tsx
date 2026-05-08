@@ -11,7 +11,7 @@ const cards = [
 
 export function Trust() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-24 md:py-32 bg-gradient-marble">
       <div className="container mx-auto max-w-6xl px-6">
         <div className="text-center max-w-2xl mx-auto">
           <p className="text-xs tracking-[0.3em] uppercase text-gold">Autoridade & Confiança</p>

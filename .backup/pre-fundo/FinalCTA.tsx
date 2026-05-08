@@ -4,6 +4,8 @@ import { CTAButton } from "./CTAButton";
 export function FinalCTA() {
   return (
     <section id="cta" className="relative py-28 md:py-40 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-celestial" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,oklch(0.78_0.11_80/0.18),transparent_60%)]" />
       {/* Soft architectural arches */}
       <svg
         aria-hidden

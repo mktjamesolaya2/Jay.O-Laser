@@ -60,7 +60,13 @@ export function Hero() {
             className="block w-[60%] max-w-[220px] h-auto"
           />
 
-          <p className="mt-4 font-['Cormorant_Garamond'] text-2xl font-normal leading-tight text-[#3a2516]">
+          <p
+            className="mt-4 font-['Cormorant_Garamond'] text-2xl font-normal leading-tight text-[#6b4a28]"
+            style={{
+              textShadow:
+                "0 1px 2px rgba(255, 248, 230, 0.85), 0 0 8px rgba(255, 248, 230, 0.6)",
+            }}
+          >
             A tecnologia da remoção
             <br />
             de pigmentos em suas mãos

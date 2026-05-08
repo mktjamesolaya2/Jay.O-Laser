@@ -5,7 +5,8 @@ import { CTAButton } from "./CTAButton";
 export function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-celestial">
-      <div className="relative w-full">
+      {/* DESKTOP: hero image with overlaid magazine-style text */}
+      <div className="hidden md:block relative w-full">
         <img
           src={heroImg}
           alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
@@ -13,17 +14,17 @@ export function Hero() {
           fetchPriority="high"
         />
 
-        <div className="pointer-events-none absolute left-0 top-[5%] md:top-[10%] z-10 w-full pl-5 pr-4 md:px-0 md:w-[46%] md:max-w-[760px] select-none text-left md:text-center">
+        <div className="pointer-events-none absolute left-0 top-[10%] z-10 w-[46%] max-w-[760px] select-none text-center">
           <h1 className="m-0">
             <img
               src={logoJayo}
               alt="Jay.O Laser"
-              className="block mx-0 md:mx-auto w-[44%] max-w-[150px] md:max-w-[260px] h-auto"
+              className="block mx-auto max-w-[260px] h-auto -ml-48"
               fetchPriority="high"
             />
           </h1>
           <p
-            className="mt-3 md:mt-5 font-['Lora'] text-[clamp(0.7rem,1.4vw,19px)] font-medium leading-snug text-[#6b4a28]"
+            className="-ml-48 mt-5 font-['Lora'] text-[clamp(0.95rem,1.4vw,19px)] font-medium leading-snug text-[#6b4a28]"
             style={{
               textShadow:
                 "0 1px 2px rgba(255, 248, 230, 0.85), 0 0 8px rgba(255, 248, 230, 0.6)",
@@ -34,8 +35,57 @@ export function Hero() {
             de pigmentos em suas mãos
           </p>
 
-          <div className="pointer-events-auto mt-3 md:mt-6 flex justify-start md:justify-center">
-            <CTAButton className="px-3 py-1.5 text-[8px] tracking-[0.08em] sm:px-8 sm:py-4 sm:text-[13px] sm:tracking-[0.14em]">
+          <div className="pointer-events-auto -ml-48 mt-6 flex justify-center">
+            <CTAButton className="px-8 py-4 text-[13px] tracking-[0.14em]">
+              Quero meu laser Jay.O
+            </CTAButton>
+          </div>
+        </div>
+      </div>
+
+      {/* MOBILE: full-screen hero — image cropped to woman + machine, text overlay on top */}
+      <div className="md:hidden relative w-full min-h-screen">
+        <img
+          src={heroImg}
+          alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
+          className="absolute inset-0 w-full h-full object-cover object-[75%_center]"
+          fetchPriority="high"
+        />
+
+        <div className="relative z-10 min-h-screen flex flex-col px-6 pt-10 pb-10">
+          <div className="text-center">
+            <img
+              src={logoJayo}
+              alt="Jay.O Laser"
+              className="block mx-auto w-[60%] max-w-[220px] h-auto"
+            />
+
+            <p
+              className="mt-5 font-['Cormorant_Garamond'] text-2xl font-medium leading-tight text-[#3a2516]"
+              style={{
+                textShadow:
+                  "0 1px 3px rgba(255, 248, 230, 0.9), 0 0 12px rgba(255, 248, 230, 0.7)",
+              }}
+            >
+              A tecnologia da remoção
+              <br />
+              de pigmentos em suas mãos
+            </p>
+
+            <p
+              className="mt-3 font-['Lora'] text-xs text-[#3a2516] leading-relaxed max-w-xs mx-auto"
+              style={{
+                textShadow:
+                  "0 1px 2px rgba(255, 248, 230, 0.85), 0 0 8px rgba(255, 248, 230, 0.6)",
+              }}
+            >
+              Agora ficou mais fácil adquirir seu equipamento a laser com a
+              alta qualidade Jay.O de produtos para Micropigmentação.
+            </p>
+          </div>
+
+          <div className="mt-auto pt-8 w-full max-w-sm mx-auto">
+            <CTAButton className="w-full justify-center py-3.5 text-sm tracking-[0.14em]">
               Quero meu laser Jay.O
             </CTAButton>
           </div>

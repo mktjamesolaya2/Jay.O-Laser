@@ -44,16 +44,16 @@ export function Hero() {
         </div>
       </div>
 
-      {/* MOBILE: full-screen hero — image covers viewport, text overlaid on sky portion */}
-      <div className="md:hidden relative w-full min-h-screen">
+      {/* MOBILE: vertical hero image as full-screen background, text overlaid on sky portion */}
+      <div className="md:hidden relative w-full">
         <img
           src={heroMobile}
           alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="block w-full h-auto"
           fetchPriority="high"
         />
 
-        <div className="relative z-10 flex flex-col items-center px-6 pt-[7vh] text-center">
+        <div className="absolute inset-x-0 top-[7%] z-10 flex flex-col items-center px-6 text-center">
           <img
             src={logoJayo}
             alt="Jay.O Laser"

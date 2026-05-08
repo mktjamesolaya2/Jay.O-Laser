@@ -16,11 +16,11 @@ export function Hero() {
         />
 
         <div className="pointer-events-none absolute left-0 top-[10%] z-10 w-[46%] max-w-[760px] select-none text-center">
-          <h1 className="m-0">
+          <h1 className="m-0 -ml-48">
             <img
               src={logoJayo}
               alt="Jay.O Laser"
-              className="block mx-auto max-w-[260px] h-auto -ml-48"
+              className="block mx-auto max-w-[260px] h-auto"
               fetchPriority="high"
             />
           </h1>

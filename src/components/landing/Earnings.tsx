@@ -122,11 +122,24 @@ export function Earnings() {
       <span className="pointer-events-none absolute top-[68%] right-[14%] w-[2px] h-[2px] rounded-full bg-[#DCC9A8]/50" />
       <span className="pointer-events-none absolute top-[88%] right-[7%] w-1 h-1 rounded-full bg-[#B89656]/45 blur-[0.5px]" />
 
-      {/* Zeus — emerges from the left, dissolves into the calculator */}
+      {/* Zeus — mobile: visible top-left figure; desktop: side fade */}
       <img
         src={zeus}
         alt=""
-        className="pointer-events-none absolute top-0 bottom-0 -left-8 md:-left-16 h-full w-auto z-[4]"
+        className="md:hidden pointer-events-none absolute top-16 -left-6 h-56 sm:h-64 w-auto z-[4] opacity-60"
+        style={{
+          mixBlendMode: "lighten",
+          maskImage:
+            "linear-gradient(to right, black 0%, black 55%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to right, black 0%, black 55%, transparent 100%)",
+        }}
+        loading="lazy"
+      />
+      <img
+        src={zeus}
+        alt=""
+        className="hidden md:block pointer-events-none absolute top-0 bottom-0 -left-16 h-full w-auto z-[4]"
         style={{
           objectFit: "contain",
           objectPosition: "left center",

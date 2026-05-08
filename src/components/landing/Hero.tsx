@@ -5,11 +5,11 @@ import { CTAButton } from "./CTAButton";
 export function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-celestial">
-      <div className="relative w-full min-h-[600px] sm:min-h-[680px] md:min-h-0">
+      <div className="relative w-full min-h-[460px] sm:min-h-[540px] md:min-h-0">
         <img
           src={heroImg}
           alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
-          className="absolute inset-0 w-full h-full object-cover object-[55%_center] md:relative md:h-auto md:object-contain md:object-center"
+          className="block h-auto w-full"
           fetchPriority="high"
         />
 

@@ -43,53 +43,40 @@ export function Hero() {
         </div>
       </div>
 
-      {/* MOBILE: full-screen hero — image cropped to woman + machine, text overlay on top */}
-      <div className="md:hidden relative w-full min-h-screen">
-        <img
-          src={heroImg}
-          alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
-          className="absolute inset-0 w-full h-full object-cover object-[75%_center]"
-          fetchPriority="high"
-        />
+      {/* MOBILE: full-screen hero — text content top, full hero image anchored at bottom */}
+      <div className="md:hidden flex flex-col min-h-screen">
+        <div className="flex-1 flex flex-col justify-center items-center text-center px-6 pt-8 pb-4">
+          <img
+            src={logoJayo}
+            alt="Jay.O Laser"
+            className="block mx-auto w-[65%] max-w-[240px] h-auto"
+            fetchPriority="high"
+          />
 
-        <div className="relative z-10 min-h-screen flex flex-col px-6 pt-10 pb-10">
-          <div className="text-center">
-            <img
-              src={logoJayo}
-              alt="Jay.O Laser"
-              className="block mx-auto w-[60%] max-w-[220px] h-auto"
-            />
+          <p className="mt-5 font-['Cormorant_Garamond'] text-2xl font-medium leading-tight text-[#3a2516]">
+            A tecnologia da remoção
+            <br />
+            de pigmentos em suas mãos
+          </p>
 
-            <p
-              className="mt-5 font-['Cormorant_Garamond'] text-2xl font-medium leading-tight text-[#3a2516]"
-              style={{
-                textShadow:
-                  "0 1px 3px rgba(255, 248, 230, 0.9), 0 0 12px rgba(255, 248, 230, 0.7)",
-              }}
-            >
-              A tecnologia da remoção
-              <br />
-              de pigmentos em suas mãos
-            </p>
+          <p className="mt-3 font-['Lora'] text-xs text-[#5a4030] leading-relaxed max-w-xs mx-auto">
+            Agora ficou mais fácil adquirir seu equipamento a laser com a alta
+            qualidade Jay.O de produtos para Micropigmentação.
+          </p>
 
-            <p
-              className="mt-3 font-['Lora'] text-xs text-[#3a2516] leading-relaxed max-w-xs mx-auto"
-              style={{
-                textShadow:
-                  "0 1px 2px rgba(255, 248, 230, 0.85), 0 0 8px rgba(255, 248, 230, 0.6)",
-              }}
-            >
-              Agora ficou mais fácil adquirir seu equipamento a laser com a
-              alta qualidade Jay.O de produtos para Micropigmentação.
-            </p>
-          </div>
-
-          <div className="mt-auto pt-8 w-full max-w-sm mx-auto">
+          <div className="mt-6 w-full max-w-sm mx-auto">
             <CTAButton className="w-full justify-center py-3.5 text-sm tracking-[0.14em]">
               Quero meu laser Jay.O
             </CTAButton>
           </div>
         </div>
+
+        <img
+          src={heroImg}
+          alt="Jay.O Laser — A tecnologia da remoção de pigmentos em suas mãos"
+          className="block w-full h-auto"
+          loading="lazy"
+        />
       </div>
     </section>
   );
